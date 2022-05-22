@@ -1,5 +1,11 @@
-.container-fluid div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-fluid{
+    background-color: darkgrey;
+}
+#middle{
+    background-color: white;
+}
+@media (min-width: 992px) {
+    .alto-100{
+        height: 100vh;
+    }
 }
