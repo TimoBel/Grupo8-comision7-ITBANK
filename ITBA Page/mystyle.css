@@ -3,3 +3,24 @@
     align-items: center;
     justify-content: center;
 }
+
+#Header1{
+    background-color: #1A1D30;
+}
+
+#Home{
+    align-items: flex-start;
+    justify-items: left;
+    justify-content: left;
+    justify-self: left;
+}
+
+#logout{
+    /* margin-left: 30rem; */
+    padding:   0.5rem;
+    border: solid;
+    border-radius: 0.7rem;
+    border-width: 0.12rem;
+    color: #E5E5E5;
+    text-decoration: none;
+}
