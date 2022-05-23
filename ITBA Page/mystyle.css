@@ -3,3 +3,7 @@
     align-items: center;
     justify-content: center;
 }
+footer {
+    color: aliceblue;
+    background-color: rgb(26, 29, 48);
+    }
