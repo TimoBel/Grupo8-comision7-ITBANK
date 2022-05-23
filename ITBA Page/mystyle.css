@@ -1,11 +1,63 @@
-.container-fluid{
-    background-color: darkgrey;
+*{
+    margin: 0;
+    padding: 0;
 }
-#middle{
-    background-color: white;
+
+body{
+    background-color: beige;
+    font-family: 'Lato', sans-serif;
 }
-@media (min-width: 992px) {
-    .alto-100{
-        height: 100vh;
-    }
+
+.circular{
+    border-radius: 50%
+}
+
+.Userimage,
+.Info,
+.Panel{
+    background-color: #e6e8ee;
+}
+.caja1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.Info > .Numcount{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.Info > .Nametag{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.Userimage,
+.Info{
+    padding-bottom: 0%;
+}
+
+.button{
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+
+
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+.Panel div{
+    background-color: #f1f1f1;
+    padding: 0%;
 }
