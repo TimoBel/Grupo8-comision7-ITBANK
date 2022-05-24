@@ -61,3 +61,28 @@ body{
     background-color: #f1f1f1;
     padding: 0%;
 }
+
+
+.Header1{
+  background-color: #1A1D30;  
+  height: 5rem;
+  color: white;
+}
+
+#logo{
+    float: left;
+}
+
+#logout{
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding:   0.5rem;
+    border: solid;
+    border-radius: 0.7rem;
+    border-width: 0.12rem;
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
