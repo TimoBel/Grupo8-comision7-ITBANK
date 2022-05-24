@@ -1,5 +1,5 @@
-.Maincontainer{
-    align-content: center;
+/*.Maincontainer{
+    position: relative;
     text-align: center;
     
 }
@@ -7,25 +7,30 @@
     padding: 20px 0;
     text-align: center;
     font-size: 2rem;
-}
+}*/
 .Middle{
-    background: white;
-    width: 97%;
+    background-color: #e6e8ee;
+    width: 100%;
     max-width: 1000px;
     margin: 16px auto;/*Arriba derecha 
 abajo izquierda*/
 
     display: grid;
-    gap: 1.6em auto;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill,minmax(100px,auto));
+    /*gap: 1.6em auto;
     grid-template-columns: repeat(10,10%);
-    grid-template-rows: repeat(10,10%);
+    grid-template-rows: repeat(10,10%);*/
 }
 
+.mtopleft,.mtopright,
+.mmiddleleft,.mmiddleright,
+.mbottomleft,.mbottomright,
 .Middle > .caja1,
 .Middle > .caja2,
 .Middle > .caja3,
 .Middle > .caja4{
-    background:#fff;
     border: 1px solid black;
     padding: 0%;
 }
@@ -43,4 +48,73 @@ abajo izquierda*/
 }
 .caja4{
     grid-column: 6/11;
+}
+
+.caja2{
+    display: grid;
+    grid-gap: 0px;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(20,5%);
+    grid-template-rows: repeat(20,5%);
+}
+
+.mtopleft{
+    grid-column-start: 1;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.mtopright{
+    grid-column-start: 15;
+    grid-column-end: 21;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.mmiddleleft{
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 6;
+    grid-row-end: 8; 
+}
+.mmiddleright{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 12;  
+}
+.mbottomright{
+    grid-column-start: 10;
+    grid-column-end: 21;
+    grid-row-start: 8;
+    grid-row-end: 12;  
+}
+.mbottomleft{
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 12;
+    grid-row-end: 21; 
+}
+.Dolares1,
+.Pesos1{
+    display: grid;
+    grid-gap: 0px;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 25% 75%;
+}
+.Dolares2,
+.Pesos2{
+    display: grid;
+    grid-gap: 0px;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 30% 70%;
+}
+.ContainerResumen{
+    display: grid;
+    grid-gap: 0px;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 30% 30% 40%;
 }
