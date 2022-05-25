@@ -91,7 +91,7 @@ abajo izquierda*/
     grid-row-end: 21; 
 }
 
-/*MAQUETACION DEL BOX SUPERIOR IZQUIERDO (SECCION 2 - MIDDLE)*/
+/*MAQUETACION DEL BOX SUPERIOR IZQUIERDO (SECCION 2 - MIDDLE) - Caja de Ahorro*/
 .mtopleft{
     position: relative;
 }
@@ -120,7 +120,7 @@ abajo izquierda*/
     width: 100%;
     grid-template-columns: 40% 60%;
 }
-/*MAQUETACION DEL BOX SUPERIOR DERECHO (SECCION 2 - MIDDLE)*/
+/*MAQUETACION DEL BOX SUPERIOR DERECHO (SECCION 2 - MIDDLE) - Ultimos Movimientos*/
 .Dolares2,
 .Pesos2{
     display: grid;
@@ -146,7 +146,7 @@ abajo izquierda*/
     height: 70%;
     width: 100%;
 }
-/*MAQUETACION DEL BOX MEDIO IZQUIERDO (SECCION 2 - MIDDLE)*/
+/*MAQUETACION DEL BOX MEDIO IZQUIERDO (SECCION 2 - MIDDLE) - Tarjeta de Credito*/
 .mmiddleleft{
     position: relative;
 }
@@ -163,6 +163,7 @@ abajo izquierda*/
     position: absolute;
     width: 100%;
     grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50% 50%;
     bottom: 0;
     left: 0;
     height: 70%;
@@ -176,6 +177,61 @@ abajo izquierda*/
     display: flex;
     flex-direction: column;
     justify-content: center;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+/*MAQUETACION DEL BOX MEDIO DERECHO (SECCION 2 - MIDDLE) - Plazo Fijo*/
+.mmiddleright{
+    position: relative;
+}
+.PlazoFijo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.PlazoContainer{
+    display: grid;
+    grid-gap: 0px;
+    position: absolute;
+    width: 100%;
+    grid-template-rows: 50% 50%;
+    bottom: 0;
+    left: 0;
+    height: 70%;    
+}
+.PlazoContainer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*MAQUETACION DEL BOX MEDIO DERECHO (SECCION 2 - MIDDLE) - Prestamos*/
+.mbottomright{
+    position: relative;
+}
+.Prestamo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28%;
+    width: 100%;
+    text-align: center;
+}
+.PrestamoContainer{
+    display: grid;
+    grid-gap: 0px;
+    position: absolute;
+    width: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    bottom: 0;
+    left: 0;
+    height: 70%;
 }
 /*LAYOUT DEL FOOTER*/
 .Footer{
@@ -186,9 +242,6 @@ abajo izquierda*/
     display: grid;
     height: 20vh;/*vh es equivalente a un porcentual*/
     grid-gap: 1px;
-
     grid-template-columns: 30% 10% 15% 15% 15% 15%;
     grid-template-rows:repeat(5, 20%);
-
-}
 }
