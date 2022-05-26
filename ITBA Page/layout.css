@@ -326,10 +326,24 @@
     max-width: 1200px;
     margin: 0px auto;
     display: grid;
-    height: 20vh;/*vh es equivalente a un porcentual*/
+    height: 20vh;
     grid-gap: 0px;
     grid-template-columns: 30% 10% 15% 15% 15% 15%;
     grid-template-rows:repeat(5, 20%);
     border: 1px solid black;
 }
+/*LAYOUT DEL HEADER*/
+.Header{
+    background-color: #e6e8ee;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    height: 10vh;
+    grid-gap: 0px;
+    border: 1px solid black;
+    grid-template-columns: 45% 55%;
 }
+
+}/*CIERRE DEL MEDIA QUERIS*/
