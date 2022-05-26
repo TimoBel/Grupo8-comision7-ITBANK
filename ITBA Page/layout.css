@@ -340,10 +340,27 @@
     max-width: 1200px;
     margin: 0px auto;
     display: grid;
-    height: 10vh;
+    height: auto;
     grid-gap: 0px;
     border: 1px solid black;
     grid-template-columns: 45% 55%;
+}
+.Header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Logo{
+    grid-column: 1/2;
+}
+.Box2header{
+    grid-column: 2/3;
+    text-align: center;
+}
+.imagen{
+    max-width: 100%;
+    max-height: 100%;
+    background: transparent;
 }
 
 }/*CIERRE DEL MEDIA QUERIS*/

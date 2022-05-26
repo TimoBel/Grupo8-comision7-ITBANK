@@ -138,3 +138,8 @@ body{
     display: block;
     text-decoration: none;
 }
+/*CSS HEADER*/
+.Box2header{
+    font-size: 35px;
+    font-style:oblique;
+}
