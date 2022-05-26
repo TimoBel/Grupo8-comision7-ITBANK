@@ -102,10 +102,6 @@ body{
     padding: 0px;
     padding-left: 0px;
 }
-.ContainerMonedas2{
-   /* padding-top: 5px;
-    padding-left: 5px;*/
-}
 .Dolares1,
 .Pesos1{
     font-size: 20px;
@@ -127,14 +123,6 @@ body{
 .Creditcard{
     border: solid 1px black;
 }
-
-.total,
-.consumo{
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-}
-
 .Resumen{
     padding: 8px;
 }
