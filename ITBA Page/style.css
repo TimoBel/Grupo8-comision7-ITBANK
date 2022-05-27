@@ -1,0 +1,13 @@
+footer {
+    background-color: rgb(26, 29, 48);
+}
+
+table {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+}
+.Titulos {
+    padding: 50px;
+}
