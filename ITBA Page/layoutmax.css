@@ -1,4 +1,13 @@
 @media only screen and (min-width: 760px) and (max-width: 1400px)/* and ((min-height:768px) and (max-height:940px))*/{ 
+/*PARAMETROS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e5e5e5;
+    font-family: 'Montserrat', sans-serif;
+}
 /*LAYOUT PRINCIPAL*/
 .Maincontainer{
     display: grid;
@@ -6,12 +15,8 @@
     height: 100vh;
     grid-template-columns: 100%;
 }
-.Maincontainer div{
-    
-}
 /*LAYOUT DEL MIDDLE*/
 .Middle{
-    background-color: #e6e8ee;
     width: 100%;
     max-width: 1200px;
     margin: 0px auto;
@@ -21,28 +26,75 @@
     grid-template-columns: repeat(10,10%);
     grid-template-rows: repeat(10,10%);
 }
-.mtopleft,.mtopright,
-.mmiddleleft,.mmiddleright,
-.mbottomleft,.mbottomright,
-.Middle > .caja1,
-.Middle > .caja2{
-    border: 1px solid black;
-    padding: 0%;
-}
 /*MAQUETACION GENERAL DEL MIDDLE*/
 .caja1{
     grid-row: 1/11;
     grid-column: 1/3;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
 }
 .caja2{
     grid-column: 3/11;
     grid-row: 1/11;
+    background-color: #e5e5e5;
+    font-family: 'Montserrat', sans-serif;
 }
-.caja1{
-    height: 100%;
-    width: 100%;
+/*MAQUETACION DE LA CAJA 1*/
+.button{
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
 }
-/*MAQUETACION DE LA SECCION 2*/
+.button:hover{
+    background-color: black;
+    color: white;
+}
+.circular{
+    border-radius: 50%
+}
+.Userimage{
+    padding: 20px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.Panel{
+    background-color: #FFFFFF;
+    
+}
+.Info > .Numcount{
+    font-size: 10px;
+    margin: 0;
+    padding: 5px;
+}
+.Info > .Nametag{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.Info{
+    padding-bottom: 0%;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.Panel div{
+    background-color: #f1f1f1;
+    padding: 0%;
+}
+.Panel{
+    padding: 5px;
+}
+/*MAQUETACION DE LA CAJA 2*/
 .caja2{
     display: grid;
     grid-gap: 0px;
@@ -88,10 +140,11 @@
     grid-row-start: 12;
     grid-row-end: 21; 
 }
-
-/*MAQUETACION DEL BOX SUPERIOR IZQUIERDO (SECCION 2 - MIDDLE) - Caja de Ahorro*/
+/*MAQUETACION DEL BOX SUPERIOR IZQUIERDO (CAJA 2 - MIDDLE) - Caja de Ahorro - MTOPLEFT */
 .mtopleft{
     position: relative;
+    margin: 0%;
+    padding:0%;
 }
 .SubtitleMenu{
     position: absolute;
@@ -99,6 +152,8 @@
     left: 0;
     height: 70%;
     width: 100%;
+    padding: 0px;
+    font-size: 25px;
 }
 .TitleMenu{
     position: absolute;
@@ -110,6 +165,10 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 0px;
+    font-size: 35px;
+    background-color: rgb(26, 29, 48);
+    color: aliceblue;
 }
 .Cajadeahorro{
     position: absolute;
@@ -121,6 +180,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: #f1f1f1;
 }
 .Dolares1,
 .Pesos1{
@@ -129,6 +189,7 @@
     height: 100%;
     width: 100%;
     grid-template-columns: 40% 60%;
+    font-size: 20px;
 }
 .Dolares1 div,
 .Pesos1 div{
@@ -147,8 +208,10 @@
     left: 0;
     height: 70%;
     width: 100%;
+    padding: 0px;
+    padding-left: 0px;
 }
-/*MAQUETACION DEL BOX SUPERIOR DERECHO (SECCION 2 - MIDDLE) - Ultimos Movimientos*/
+/*MAQUETACION DEL BOX SUPERIOR DERECHO (CAJA 2 - MIDDLE) - Ultimos Movimientos - MTOPRIGHT*/
 .Dolares2,
 .Pesos2{
     display: grid;
@@ -156,6 +219,11 @@
     height: auto;
     width: 100%;
     grid-template-rows: 30% 70%;
+}
+.Dolares2 div,
+.Pesos2 div{
+    padding: 5px;
+    height: 16px;
 }
 .mtopright{
     position: relative;
@@ -170,6 +238,10 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 0px;   
+    font-size: 20px;
+    background-color: rgb(26, 29, 48);
+    color: aliceblue;
 }
 .ContainerMonedas2{
     position: absolute;
@@ -183,7 +255,7 @@
     flex-direction: column;
     
 }
-/*MAQUETACION DEL BOX MEDIO IZQUIERDO (SECCION 2 - MIDDLE) - Tarjeta de Credito*/
+/*MAQUETACION DEL BOX MEDIO IZQUIERDO (CAJA 2 - MIDDLE) - Tarjeta de Credito - MMIDDLELEFT*/
 .mmiddleleft{
     position: relative;
 }
@@ -193,6 +265,17 @@
     left: 0;
     height: 28%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: rgb(26, 29, 48);
+    color: aliceblue;
+}
+.CreditContainer{
+    text-align: center;
+    padding: 0px;
 }
 .ContainerResumen{
     display: grid;
@@ -215,15 +298,15 @@
 .ContainerResumen div{
     justify-content: center;
 }
-.Creditcard,
 .Resumen{
     display: flex;
     flex-direction: column;
     justify-content: center;
     grid-column: 3/4;
     grid-row: 1/3;
+    padding: 8px;
 }
-/*MAQUETACION DEL BOX MEDIO DERECHO (SECCION 2 - MIDDLE) - Plazo Fijo*/
+/*MAQUETACION DEL BOX MEDIO DERECHO (SECCION 2 - MIDDLE) - Plazo Fijo - MMIDDLERIGHT*/
 .mmiddleright{
     position: relative;
 }
@@ -237,6 +320,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(26, 29, 48);
+    color: aliceblue;
 }
 .PlazoContainer{
     display: grid;
@@ -253,7 +338,7 @@
     flex-direction: column;
     justify-content: center;
 }
-/*MAQUETACION DEL BOX INFERIOR DERECHO (SECCION 2 - MIDDLE) - Prestamos*/
+/*MAQUETACION DEL BOX INFERIOR DERECHO (CAJA 2 - MIDDLE) - Tarjetas - MBOTTOMLEFT*/
 .mbottomleft{
     position: relative;
 }
@@ -267,13 +352,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(26, 29, 48);
+    color: aliceblue;
 }
 .TarjetasContainer{
     display: grid;
     grid-gap: 0px;
     position: absolute;
     width: 100%;
-    grid-template-rows: repeat(4,25%);
+    grid-template-rows: 10% 15% 10% 15% 10% 15% 10% 15%;
     bottom: 0;
     left: 0;
     height: 90%;
@@ -285,7 +372,13 @@
     padding-left: 5px;
     text-align: center;
 }
-/*MAQUETACION DEL BOX INFERIOR IZQUIERDO (SECCION 2 - MIDDLE) - Tarjetas*/
+.visa,
+.mastercard,
+.american,
+.otro{
+    background-color:#f1f1f1;
+}
+/*MAQUETACION DEL BOX INFERIOR IZQUIERDO (CAJA 2 - MIDDLE) - Prestamos - MBOTTOMRIGHT*/
 .mbottomright{
     position: relative;
 }
@@ -299,6 +392,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(26, 29, 48);
+    color: aliceblue;
 }
 .PrestamoContainer{
     display: grid;
@@ -317,10 +412,26 @@
     justify-content: center;
     padding-left: 5px;
 }
+.button1{
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.button1:hover{
+    background-color: black;
+    color: white;
+}
 
 /*LAYOUT DEL FOOTER*/
 .Footer{
-    background-color: #e6e8ee;
+    background-color: rgb(26, 29, 48);
     justify-content: center;
     width: 100%;
     max-width: 1200px;
@@ -328,13 +439,41 @@
     display: grid;
     height: 20vh;
     grid-gap: 0px;
-    grid-template-columns: 30% 10% 15% 15% 15% 15%;
+    padding-bottom: 20px;
+    grid-template-columns: 25% 75%;
     grid-template-rows:repeat(5, 20%);
     border: 1px solid black;
+    color: aliceblue;
+
+}
+table{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.imagenfooter{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.Titulos{
+    font-size: 20px;
+    padding: 10px;
+}
+.Logofooter{
+    grid-column: 1/2;
+    grid-row: 2/5;
 }
 /*LAYOUT DEL HEADER*/
 .Header{
-    background-color: #e6e8ee;
+    background-color: rgb(26, 29, 48);
+    color: aliceblue;
     justify-content: center;
     width: 100%;
     max-width: 1200px;
@@ -350,12 +489,14 @@
     flex-direction: column;
     justify-content: center;
 }
-.Logo{
+.Logoheader{
     grid-column: 1/2;
 }
 .Box2header{
     grid-column: 2/3;
     text-align: center;
+    font-size: 35px;
+    font-style:oblique;
 }
 .imagen{
     max-width: 100%;
