@@ -70,7 +70,7 @@ body{
 }
 .Panel{
     background-color: #FFFFFF;
-    
+    padding: 5px;
 }
 .Info > .Numcount{
     font-size: 10px;
@@ -91,9 +91,7 @@ body{
     background-color: #f1f1f1;
     padding: 0%;
 }
-.Panel{
-    padding: 5px;
-}
+
 /*MAQUETACION DE LA CAJA 2*/
 .caja2{
     display: grid;
