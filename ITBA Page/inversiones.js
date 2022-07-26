@@ -1,4 +1,7 @@
-window.onload = traer;
+/*let contenido = $("#contenido");*/
+let contenido = document.querySelector('#contenido')
+
+window.onload = traer();
 
 function traer(){
     fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
@@ -9,20 +12,20 @@ function traer(){
 } 
 
 function tabla(datos){
-    contenido.html(`
-    <tr>
-        <th scope="row">Dolar Oficial</th>
-        <td>${datos[0].casa.compra}</td>
-        <td>${datos[0].casa.venta}</td>
-    </tr>
-
-    <tr>
-        <th scope="row">Dolar Blue</th>
-        <td>${datos[1].casa.compra}</td>
-        <td>${datos[1].casa.venta}</td>
-    </tr>
-    `)
+    contenido.innerHTML = ``
+    for (let x of datos){
+        contenido.innerHTML += `
+        <tr>
+            <th scope="row">${x.casa.nombre}</th>
+            <td>$ ${x.casa.compra}</td>
+            <td>$ ${x.casa.venta}</td>
+        </tr>
+        `
+    }
 }
 
-let contenido = $("#contenido");
+
+
+
+
 
