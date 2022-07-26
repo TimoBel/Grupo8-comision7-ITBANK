@@ -3,11 +3,12 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+      
     <title>Inversiones - ITBANK</title>
   </head>
   <body>
@@ -31,56 +32,33 @@
       <div class="Box2header">Siempre Junto a Vos</div>
     </div>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">Dolar Oficial</th>
-          <th scope="col">Dolar Blue</th>
-        </tr>
-      </thead>
-      <tbody id="contenido">
-      </tbody>
-    </table>
+    <div class="container">
+      <div class="containertable">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Venta</th>
+              <th scope="col">Compra</th>
+            </tr>
+          </thead>
+          <tbody id="contenido">
+          </tbody>
+        </table>
+     </div>
 
-    <button type="button" class="btn btn-secondary">Comprar</button>
-    <button type="button" class="btn btn-secondary">Vender</button>
+      <div class="operation d-flex justify-content-center">
+        <div class="row my-5">
+          <div>
+           <button type="button" class="btn btn-secondary m-2">Comprar</button>
+          </div>
+          <div>
+           <button type="button" class="btn btn-secondary m-2">Vender</button>
+          </div>
+        </div>
+      </div>
 
-    <div class="Footer">
-      <div class="Logofooter"><img class="imagen"src="itbank Logo.jpg" alt=""></div>
-      <table>
-          <tr class="Titulos">
-              <td class="Titulos">Cuentas y Tarjetas</td>
-              <td class="Titulos">Sucursales y Canales</td>
-              <td class="Titulos">Artículos Promovidos</td>
-          </tr>
-          <tr id="Columnas">
-              <td>Cuenta Sueldo</td>
-              <td>Tus Claves</td>
-              <td>Buscá en Itbank</td>
-          </tr>
-          <tr class="Columnas">
-              <td>Cuentas</td>
-              <td>Turno Online</td>
-              <td>Soy Jubilado</td>
-          </tr>
-          <tr class="Columnas">
-              <td>Tarjetas</td>
-              <td>Canales de Atención</td>
-              <td>Impuestos de Sellos</td>
-          </tr>
-          <tr class="Columnas">
-              <td>Beneficios</td>
-              <td>Autoservicio y Cajeros</td>
-              <td>Seguimiento de tarjetas</td>
-          </tr>
-      </table>    
     </div>
-
-
-
-   
-
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

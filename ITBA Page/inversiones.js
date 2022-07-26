@@ -11,13 +11,13 @@ function traer(){
 function tabla(datos){
     contenido.html(`
     <tr>
-        <th scope="row">Compra</th>
+        <th scope="row">Dolar Oficial</th>
         <td>${datos[0].casa.compra}</td>
         <td>${datos[0].casa.venta}</td>
     </tr>
 
     <tr>
-        <th scope="row">Venta</th>
+        <th scope="row">Dolar Blue</th>
         <td>${datos[1].casa.compra}</td>
         <td>${datos[1].casa.venta}</td>
     </tr>
